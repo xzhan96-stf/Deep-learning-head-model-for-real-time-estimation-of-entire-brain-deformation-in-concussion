@@ -1,5 +1,5 @@
 # Deep-learning-head-model-for-real-time-estimation-of-entire-brain-deformation-in-concussion
-This file includes codes and example input output files for the paper entitled "Deep Learning Head Model for Real-time Estimation of Entire Brain Deformation in Concussion"
+This file includes codes and example input output files for the paper entitled "Rapid Estimation of Entire Brain Strain Using Deep Learning Models"
 
 # Guidelines
 
@@ -27,4 +27,4 @@ Please feel free to contact us if you find some problem with this guideline: xzh
 
 Please cite the following paper if you use this model for calculation in your project:
 
-Zhan, Xianghao, et al. "Deep Learning Head Model for Real-time Estimation of Entire Brain Deformation in Concussion." arXiv preprint arXiv:2010.08527 (2020).
+Zhan, Xianghao, et al. "Rapid Estimation of Entire Brain Strain Using Deep Learning Models." IEEE Transactions on Biomedical Engineering (2021).
