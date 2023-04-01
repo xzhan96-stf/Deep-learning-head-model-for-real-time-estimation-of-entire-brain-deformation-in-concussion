@@ -17,19 +17,22 @@ def YReconstruct(Y, method, Yscaler):
     Y_out = np.exp(Yscaler.inverse_transform(Y))
   return Y_out
 
-Dir_results = 'G:\\共享云端硬盘\\Head Models (KTH, GHBMC, ML)\\ML\\Github\\result'
-Dir_data_X = 'G:\\共享云端硬盘\\Head Models (KTH, GHBMC, ML)\\ML\\Github\\X'
-Dir_data_Y = 'G:\\共享云端硬盘\\Head Models (KTH, GHBMC, ML)\\ML\\Github\\Y'
-Dir_model = 'G:\\共享云端硬盘\\Head Models (KTH, GHBMC, ML)\\ML\\Github\\model'
+current_dir = os.getcwd()
+Dir_results = current_dir + '\\result'
+Dir_data_X = current_dir + '\\X'
+Dir_data_Y = current_dir + '\\Y'
+Dir_model = current_dir + '\\model'
 
 #Load feature of the test data
 os.chdir(Dir_data_X)
 X = loadmat('X_test.mat')['X_test']
 
 #Load MPS of the test data for validation (if the MPS is available)
-os.chdir(Dir_data_Y)
-Y = loadmat('Y_test.mat')['Y_test']
-
+if Dir_data_Y:
+    os.chdir(Dir_data_Y)
+    Y = loadmat('Y_test.mat')['Y_test']
+else:
+    Y = np.empty(0)
 
 # load json and create model
 os.chdir(Dir_model)
@@ -43,14 +46,6 @@ loaded_model = model_from_json(loaded_model_json)
 loaded_model.load_weights("model.h5")
 print("Loaded model from disk!")
 
-# evaluate loaded model on test data
-lr = 0.0002
-output_nodes = Y.shape[1]
-epoch = 2000
-dropout = 0.5
-regularization = 0.01
-Adam = optimizers.adam(lr = lr, decay=1e-6)
-loaded_model.compile(loss='mean_squared_error', optimizer=Adam)
 
 #Output prediction
 os.chdir(Dir_results)
