@@ -13,9 +13,18 @@ To use this deep learning head model, please follow the following steps:
 	2)ang_acc (angular acceleration, in rad/s^2): for each impact, provides a T * 3 matrix where T is the time step and 3 denotes the three channels (x-axis, y-axis, z-axis);
 	3)t (time step, in s): for each impact provide a T * 1 matrix denoting the sampling time, where T is the time step.
 
-2. Run feature_extraction.m after specifying the directory and name information of the kinematics file and where you want to store the engineered features.
+2. Prepare the required python packages for deep learning head model, please refer to requirements.txt.
 
-3. Prepare the required python packages for deep learning head model, please refer to requirements.txt.
+Then there are two ways to use the model:
+
+The easier way if you do not have access to MATLAB:
+
+3. Simply open a terminal with the python environment activated (with all the packages required in the requirements.txt), then run the following command line
+
+"python model_predict_user.py {filename_kinematics.mat} {Reference MPS file to be compared against, optional}"
+
+The other way if you do have access to MALTAB:
+3. Run feature_extraction.m after specifying the directory and name information of the kinematics file and where you want to store the engineered features.
 
 4. Run model_predict.py after specifying the directory and name information of the features, ground-truth MPS (if available, to check model accuracy) and where you want to store the prediction results.
 
