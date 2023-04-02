@@ -32,6 +32,8 @@ Download the model_predict_user.exe file is enough. Open a Windows Powershell/Li
 
 The file will output the predicted MPS for all N samples and 4124 brain elements in both a "MPS Prediction.mat" file and a "MPS Prediction.csv" file (N * 4124)
 
+### The whole brain MPS should be output at this time. You can read the following sections only if you want to use the model in detailed steps.
+
 ### Step 2: Python environment setup
 
 Install python and anaconda (suggested). Create a new environment using the conda create command. Specify the environment name (replace "myenv" with your desired environment name):
