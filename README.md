@@ -5,7 +5,7 @@ This file includes codes and example input output files for the paper entitled "
 
 Thank you very much for your attention to this deep learning head model. This model takes in the kinematics as input (angular velocity and angular acceleration) and output the brain strain of the entire brain (4124 brain elements).
 
-To use this deep learning head model, firstly download this project and unzip it. Then, please follow the following steps:
+To use this deep learning head model, please follow the following steps (if you are not familar with Python environment set up, skip Step 2-3, go to the easy use mode):
 
 ### Step 1: Kinematics processing
 
@@ -20,6 +20,16 @@ Provide a .mat file with kinematics as a 1*N struct named impact, where N is the
 b) If you do now have access to MATLAB you can simply input .csv files:
 
 Provide a folder of .csv files, each .csv file represents an impact. Within each .csv, the first column is the sampling time (t, which is T-by-1), the second to the fourth columns are the angular velocity (ang_vel) at each of the sampling time, the fifth to the seventh columns are the angular acceleration (ang_acc) at each of the sampling time. There is no need to provide any column names in the .csv files. 
+
+### Easy Use Mode (Use the model as a black box):
+
+Download the model_predict_user.exe file is enough. Open a Windows Powershell/Linux command window in the directory where you have the kinematics .mat file/kinemaitcs folder and the .exe file. Run the following command line:
+
+`
+python model_predict_user.py {filename_kinematics.mat/foldername_kinematics}
+`
+
+The file will output the predicted MPS for all N samples and 4124 brain elements in both a "MPS Prediction.mat" file and a "MPS Prediction.csv" file (N * 4124)
 
 ### Step 2: Python environment setup
 
