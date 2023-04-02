@@ -5,7 +5,7 @@ This file includes codes and example input output files for the paper entitled "
 
 Thank you very much for your attention to this deep learning head model. This model takes in the kinematics as input (angular velocity and angular acceleration) and output the brain strain of the entire brain (4124 brain elements).
 
-To use this deep learning head model, please follow the following steps:
+To use this deep learning head model, firstly download this project and unzip it. Then, please follow the following steps:
 
 ### Step 1: Kinematics processing
 
