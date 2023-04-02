@@ -27,7 +27,7 @@ Provide a folder of .csv files, each .csv file represents an impact. Within each
 Download the model_predict_user.exe file is enough. Open a Windows Powershell/Linux command window in the directory where you have the kinematics .mat file/kinemaitcs folder and the .exe file. Run the following command line:
 
 `
-python model_predict_user.py {filename_kinematics.mat/foldername_kinematics}
+./model_predict_user.exe {filename_kinematics.mat/foldername_kinematics}
 `
 
 The file will output the predicted MPS for all N samples and 4124 brain elements in both a "MPS Prediction.mat" file and a "MPS Prediction.csv" file (N * 4124)
