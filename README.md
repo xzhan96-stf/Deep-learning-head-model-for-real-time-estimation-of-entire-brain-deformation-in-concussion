@@ -1,5 +1,6 @@
 # Deep-learning-head-model-for-real-time-estimation-of-entire-brain-deformation-in-concussion
-This file includes codes and example input output files for the paper entitled "Rapid Estimation of Entire Brain Strain Using Deep Learning Models"
+
+This file includes codes and example input output files for the paper entitled "Rapid Estimation of Entire Brain Strain Using Deep Learning Models". To make it accessible to more researchers, we have packaged the models into a .exe file so that those not familiar with Python can use this model as well.
 
 ## Guidelines
 
