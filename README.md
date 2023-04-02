@@ -24,7 +24,7 @@ Provide a folder of .csv files, each .csv file represents an impact. Within each
 
 ### Easy Use Mode (Use the model as a black box):
 
-Download the model_predict_user.exe file is enough. Open a Windows Powershell/Linux command window in the directory where you have the kinematics .mat file/kinemaitcs folder and the .exe file. Run the following command line:
+Download the model_predict_user.exe file is enough (https://drive.google.com/file/d/1oBUyKI6Xdvz92S5b7SiyXNQMYvfJmYbj/view?usp=share_link). Open a Windows Powershell/Linux command window in the directory where you have the kinematics .mat file/kinemaitcs folder and the .exe file. Run the following command line:
 
 `
 ./model_predict_user.exe {filename_kinematics.mat/foldername_kinematics}
