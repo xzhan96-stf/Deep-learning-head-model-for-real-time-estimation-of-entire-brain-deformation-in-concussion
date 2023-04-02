@@ -3,7 +3,7 @@ This file includes codes and example input output files for the paper entitled "
 
 # Guidelines
 
-Thank you very much for your attention to this deep learning head model. This model takes in the kinematics as input (angular velocity and angular acceleration) and output the brain strain of the entire brain (4124 brain elements), 95 percentile MPS, mean, median and std of the entire brain strain, CSDM(15%).
+Thank you very much for your attention to this deep learning head model. This model takes in the kinematics as input (angular velocity and angular acceleration) and output the brain strain of the entire brain (4124 brain elements).
 
 To use this deep learning head model, please follow the following steps:
 
