@@ -18,6 +18,8 @@ Provide a .mat file with kinematics as a 1*N struct named impact, where N is the
 	2)ang_acc (angular acceleration, in rad/s^2): for each impact, provides a T * 3 matrix where T is the time step and 3 denotes the three channels (x-axis, y-axis, z-axis);
 	3)t (time step, in s): for each impact provide a T * 1 matrix denoting the sampling time, where T is the time step.
 	
+![Example_Kinematics_matfile](https://github.com/xzhan96-stf/Deep-learning-head-model-for-real-time-estimation-of-entire-brain-deformation-in-concussion/edit/main/Example_Kinematics_matfile.png?raw=true)
+
 b) If you do not have access to MATLAB and cannot prepare kinematics in a .mat file, you can simply input .csv files:
 
 Provide a folder of .csv files, each .csv file represents an impact. Within each .csv, the first column is the sampling time (t, which is T-by-1), the second to the fourth columns are the angular velocity (ang_vel) at each of the sampling time, the fifth to the seventh columns are the angular acceleration (ang_acc) at each of the sampling time. There is no need to provide any column names in the .csv files. 
